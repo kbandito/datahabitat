@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Data Habitat Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Custom helpers reused throughout the site */
+    .gradient-red { background-image: linear-gradient(to bottom right, #fecaca, #f87171, #e11d48); }
+    .text-gradient { background: linear-gradient(to right, #e11d48, #be123c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .premium-shadow { box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 12px 20px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="font-sans text-gray-800 overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-slate-50 to-white py-20 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h1 class="text-4xl lg:text-6xl font-bold text-gradient mb-6">
+        Let's Discuss Your
+        <span class="block text-red-600">Development Project</span>
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Ready to turn your property vision into reality? Get in touch for a consultation
+        and discover how our expertise can drive your project's success across Malaysia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-6 mb-16">
+        <!-- Email Card -->
+        <div class="premium-shadow border-0 text-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-6">
+          <div class="w-12 h-12 gradient-red rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-envelope text-white"></i>
+          </div>
+          <h3 class="font-semibold text-slate-900 mb-1">Email</h3>
+          <p class="text-sm font-medium text-gray-900 mb-1">hello@datahabitat.my</p>
+          <p class="text-xs text-gray-600">We typically respond within 2–4 hours</p>
+        </div>
+        <!-- Serving Card -->
+        <div class="premium-shadow border-0 text-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-6">
+          <div class="w-12 h-12 gradient-red rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-map-pin text-white"></i>
+          </div>
+          <h3 class="font-semibold text-slate-900 mb-1">Serving</h3>
+          <p class="text-sm font-medium text-gray-900 mb-1">Malaysia</p>
+          <p class="text-xs text-gray-600">Projects across Peninsular &amp; East Malaysia</p>
+        </div>
+        <!-- Response Time Card -->
+        <div class="premium-shadow border-0 text-center rounded-2xl bg-gradient-to-br from-white to-gray-50 p-6">
+          <div class="w-12 h-12 gradient-red rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-clock text-white"></i>
+          </div>
+          <h3 class="font-semibold text-slate-900 mb-1">Response Time</h3>
+          <p class="text-sm font-medium text-gray-900 mb-1">24 Hours</p>
+          <p class="text-xs text-gray-600">Initial consultation scheduling</p>
+        </div>
+      </div>
+
+      <!-- Project Inquiry Form -->
+      <div class="max-w-4xl mx-auto">
+        <div class="premium-shadow border-0 rounded-2xl bg-white">
+          <div class="py-12 px-8 text-center border-b border-gray-100">
+            <h2 class="text-2xl font-bold text-gradient mb-4">Project Inquiry Form</h2>
+            <p class="text-gray-600">
+              Please provide details about your project so we can prepare a tailored consultation
+              and proposal that addresses your specific needs.
+            </p>
+          </div>
+          <div class="p-8">
+            <form class="space-y-6">
+              <!-- Contact Name & Company Name -->
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="contact_name" class="block text-sm font-medium text-gray-700">Contact Name *</label>
+                  <input id="contact_name" type="text" placeholder="Your full name" required
+                         class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2" />
+                </div>
+                <div class="space-y-2">
+                  <label for="company_name" class="block text-sm font-medium text-gray-700">Company Name</label>
+                  <input id="company_name" type="text" placeholder="Your company or organisation"
+                         class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2" />
+                </div>
+              </div>
+              <!-- Email & Phone -->
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email Address *</label>
+                  <input id="email" type="email" placeholder="your.email@company.com" required
+                         class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2" />
+                </div>
+                <div class="space-y-2">
+                  <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                  <input id="phone" type="tel" placeholder="(+60) 12 345 6789"
+                         class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2" />
+                </div>
+              </div>
+              <!-- Project Type & Service Needed -->
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="project_type" class="block text-sm font-medium text-gray-700">Project Type *</label>
+                  <select id="project_type" required
+                          class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2 bg-white">
+                    <option value="" disabled selected>Select project type</option>
+                    <option value="residential">Residential Development</option>
+                    <option value="commercial">Commercial Development</option>
+                    <option value="mixed_use">Mixed-Use Development</option>
+                    <option value="industrial">Industrial Development</option>
+                    <option value="retail">Retail Development</option>
+                    <option value="other">Other – Please Specify</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label for="service_needed" class="block text-sm font-medium text-gray-700">Primary Service Needed *</label>
+                  <select id="service_needed" required
+                          class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2 bg-white">
+                    <option value="" disabled selected>Select service needed</option>
+                    <option value="market_research">Market Research &amp; Analysis</option>
+                    <option value="feasibility_analysis">Feasibility Analysis</option>
+                    <option value="catchment_study">Catchment &amp; Trade Area Study</option>
+                    <option value="due_diligence">Due Diligence Services</option>
+                    <option value="comprehensive_analysis">Comprehensive Analysis Package</option>
+                    <option value="other">Other – Please Specify</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Project Location -->
+              <div class="space-y-2">
+                <label for="project_location" class="block text-sm font-medium text-gray-700">Project Location</label>
+                <input id="project_location" type="text" placeholder="City, State/Province, Country"
+                       class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2" />
+              </div>
+              <!-- Budget & Timeline -->
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="budget_range" class="block text-sm font-medium text-gray-700">Budget Range</label>
+                  <select id="budget_range"
+                          class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2 bg-white">
+                    <option value="" disabled selected>Select budget range</option>
+                    <option value="under_25k">Under RM25,000</option>
+                    <option value="25k_50k">RM25,000 – RM50,000</option>
+                    <option value="50k_100k">RM50,000 – RM100,000</option>
+                    <option value="100k_250k">RM100,000 – RM250,000</option>
+                    <option value="250k_plus">RM250,000+</option>
+                    <option value="to_discuss">Prefer to Discuss</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label for="timeline" class="block text-sm font-medium text-gray-700">Project Timeline</label>
+                  <select id="timeline"
+                          class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2 bg-white">
+                    <option value="" disabled selected>Select timeline</option>
+                    <option value="urgent">Urgent – Within 2 Weeks</option>
+                    <option value="1_month">Within 1 Month</option>
+                    <option value="2_3_months">2–3 Months</option>
+                    <option value="3_6_months">3–6 Months</option>
+                    <option value="6_months_plus">6+ Months</option>
+                    <option value="flexible">Flexible Timeline</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Project Details -->
+              <div class="space-y-2">
+                <label for="project_details" class="block text-sm font-medium text-gray-700">Project Details &amp; Requirements</label>
+                <textarea id="project_details" rows="6" placeholder="Please provide additional details about your project, specific requirements, objectives, or any questions you have..."
+                          class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 px-4 py-2"></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div class="pt-6">
+                <button type="submit"
+                        class="w-full gradient-red text-white text-lg font-semibold rounded-md hover:opacity-90 transition-opacity duration-300 py-3">
+                  <span class="inline-flex items-center justify-center"><i class="fas fa-paper-plane mr-2"></i>Submit Inquiry</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partner With Us Section -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gradient mb-6">Why Partner With Us</h2>
+        <p class="text-lg text-gray-600">
+          Experience the difference that expert guidance makes in your Malaysian development success
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="premium-shadow border-0 text-center bg-white rounded-2xl p-8">
+          <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-chart-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Proven Track Record</h3>
+          <p class="text-gray-600">
+            Over RM2B in successful development projects with consistently strong returns
+            and satisfied clients across Malaysia's diverse markets.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="premium-shadow border-0 text-center bg-white rounded-2xl p-8">
+          <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-city text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Local Market Expertise</h3>
+          <p class="text-gray-600">
+            Deep understanding of Malaysian property regulations, market dynamics,
+            and cultural preferences across all major urban centres.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="premium-shadow border-0 text-center bg-white rounded-2xl p-8">
+          <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-check-circle text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Personalised Service</h3>
+          <p class="text-gray-600">
+            Dedicated attention to your specific project needs with tailored solutions
+            that align with Malaysian market objectives and constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
